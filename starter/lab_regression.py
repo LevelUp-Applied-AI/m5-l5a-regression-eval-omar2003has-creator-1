@@ -81,6 +81,7 @@ def run_cross_validation(pipeline, X_train, y_train):
     scores = cross_val_score(pipeline, X_train, y_train, cv=cv_splitter, scoring="accuracy")
     print(f"CV Scores: {scores}")
     print(f"Mean Accuracy: {scores.mean():.3f} +/- {scores.std():.3f}")
+    return scores
 
 if __name__ == "__main__":
     df = load_data()
