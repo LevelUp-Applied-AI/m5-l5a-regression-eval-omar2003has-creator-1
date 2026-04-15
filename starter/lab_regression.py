@@ -9,7 +9,7 @@ from sklearn.metrics import (classification_report, confusion_matrix, ConfusionM
                              precision_score, recall_score, f1_score)
 
 # --- Task 1: Load Data and Basic EDA ---
-def load_data(filepath="data/telecom_churn.csv"):
+def load_data(filepath="starter/data/telecom_churn.csv"):
     df = pd.read_csv(filepath)
     print(f"Data Shape: {df.shape}")
     print(f"Missing Values:\n{df.isnull().sum()}")
